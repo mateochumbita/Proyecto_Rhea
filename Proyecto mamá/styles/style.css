@@ -1,0 +1,233 @@
+:root {
+    --color-body: #413D44;
+
+
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*PARA QUE 1REM SEA IGUAL A 10 PX*/
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: var(--color-body);
+}
+
+
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;  /*centra el contenido horizontalmente */
+    /* podemos usar with: min (90%, 120rem); para suplantar max-with y width */
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+img { max-width: 100%; }
+
+
+/* Header */
+
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 300ms;
+}
+
+.barra {
+    padding-top: 4rem;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;  /* alineamos horizonalmente  */
+        align-items: center; /*alineamos verticalmente*/
+        border-bottom: 2px solid rgba(244, 247, 244, 0.5);
+            }
+
+    .logo {
+        padding: 0;
+        margin: 0;
+        width: 32%;
+    }
+    }
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.navegacion__enlace:hover {
+    border-radius: 10%;
+    background-color: rgba(20, 20, 19, 0.2) ;
+}
+
+/* MENU HAMBUERGUESA */
+
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+
+
+.btn-menu:hover{
+    background: #f5f5f5;
+}
+/*MENU HAMBUERGUESA MEDIA QUERY*/
+@media screen and (max-width: 760px) {
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Alinea los elementos a la esquina superior izquierda */
+    }
+
+    .logo {
+        width: 45%;
+        order: 2; /* Cambia el orden para que la imagen aparezca después del icono */
+    }
+
+    .btn-menu {
+        display: inline-flex;
+        margin-left: 1px; /* Ajusta el espacio entre el icono y la imagen */
+        order: 1; /* Cambia el orden para que el icono aparezca primero */
+        color: #fff;
+    }
+
+
+    .btn-menu:hover{
+        background-color: rgba(20, 20, 19, 0.2) ;
+       
+    }
+    .navegacion {
+        height: 100%;
+        background: #413D45;
+        position: fixed;
+        top: 0;
+        right: -310px;
+        padding: 0 40px;
+        transition: all 300ms;
+        flex-direction: column;
+       
+    }
+
+    .move-nav {
+        right: 0;
+    }
+
+    .navegacion__enlace {
+        margin: 20px 0px;
+    }
+
+
+
+    /*QUERY FONDO Y CONTACTAME*/
+    .fondo{
+        max-width: 90%;
+        align-items: center;
+
+    }
+    .texto-fondo{
+        max-width: 65%;
+        font-size: 13px;
+        
+    }
+
+    .texto-fondo p{
+        text-align: left;
+    }
+    .imagen-fondo{
+        display: none;
+    }
+    .contacto{
+        margin-left: 80%;
+    }
+}
+
+
+
+/*COMIENZO DEL MAIN*/
+
+
+
+.fondo{
+    display: flex;
+    width: 95%;
+    margin: 50px;
+    padding: 0;
+    margin-top: 0;
+    max-width: 100%;
+    
+}
+
+.texto-fondo{
+    font-family: 'Montserrat', sans-serif;
+    color:#f5f5f5 ;
+    max-width: 644px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.imagen-fondo{
+
+    width: 590px;
+    height: 430px;
+    margin-right: 1%;
+    margin-top: 10PX;
+}
+
+.contacto{
+    font-family: 'Montserrat', sans-serif;;
+    padding: 10px;
+    margin-top: 0;
+    margin-left:25px;
+    font-size: 20px;
+    
+    border: none;
+    color: #413D45;
+    background-color: #EBCFC8;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+
+.contacto:hover{
+    background-color: #C4ADA7;
+    box-shadow: 1px 1px 10px -5px #737878;
+}

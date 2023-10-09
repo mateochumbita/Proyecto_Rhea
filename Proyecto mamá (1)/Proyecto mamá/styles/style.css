@@ -182,29 +182,59 @@ img { max-width: 100%; }
 
     /*NOSOTROS QUERY*/
     .nosotros{
-    
+  
     align-items: center;
     text-align: center;
     max-width: 90%;
+    
 }
 .nosotros h1{
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 140px;
 }
 .nosotros p{
-    font-size: 10px;
-    max-width: 60%;
+    font-size: 12px;
+    max-width: 65%;
     margin-left:5% ;
 }
 .nosotros img{
-    width: 40%;
-    height: 60%;
-    margin-top: 20%;
-    margin-right: 6%;
+    width: 45%;
+    height: 50%;
+    margin-top: 60%;
+    margin-left: 2%;
 }
+
     
+/*PUERICULTORES QUERY*/
+
+.puericultores{
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+.puericultores h1 {
+    font-size: 20px;
 }
 
+.puericultores p {
+    font-size: 15px;
+    max-width: 90%;
+    margin-left:5% ;
+    line-height: 1.7rem;
+}
+.pueri-tarjetas .tarjeta h2{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.tarjeta p {
+    font-size: 12px;
+}
 
+ .texto-card {
+    
+    font-size: 10px;
+}
+}
 
 /*PARTE CONTACTO*/
 
@@ -269,10 +299,10 @@ img { max-width: 100%; }
     margin-top: 20px;
     display: inline;
     margin-left: 10px;
-    border-bottom: 2px solid rgba(244, 247, 244, 0.5);
+    
 }
 main{
-    border-top: 2px solid rgba(244, 247, 244, 0.5);
+    
     left: 0;
     width: 100%;
 }
@@ -280,9 +310,10 @@ main{
 .titulo-nos{
     color: #C3846B;
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     max-width: 524px;
     margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -293,19 +324,24 @@ main{
     max-width: 730px;
     font-size: 18px;
     text-align: left;
-    
     margin-bottom:10px ;
     margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .nosotros-img{
     float: right;
-    width: 150x;
-    height: 530px;
-    margin-right: 15px;
+    margin-right:2%;
+    margin-top: 2%;
+    
 }
-
+.manitos{
+    margin-left:70%;
+    z-index: 2;
+    margin-top: -90px;
+    
+}
 
 /*QUE HACEN LOS PUERICULTORES*/
 
@@ -324,8 +360,7 @@ main{
    
     margin-left: 10px;
     text-align: center;
-    justify-content: center;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -337,17 +372,54 @@ main{
     max-width: 850;
     margin-bottom:10px ;
     margin-left: 10px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 
 
-.pueri-tarjetas{
-    display: inline-flex;
+.pueri-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en filas */
     max-width: 90%;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px; /* Espacio entre las tarjetas */
+    margin-top: 80px;
+}
+
+ .tarjeta {
+    width: 300px; /* Ancho de las tarjetas */
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #F8F6EB;
+    text-align: center; /* Para centrar el contenido */
+}
+
+/* Estilos para los títulos dentro de las tarjetas */
+.pueri-tarjetas .tarjeta h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #C3846B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para los párrafos dentro de las tarjetas */
+.pueri-tarjetas .tarjeta p {
+    font-size: 16px;
+    line-height: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.pueritarjeta .tarjeta{
-    
+/*EFECTOS DE TARJETA*/
+.tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px #AE689D;
 }
+
